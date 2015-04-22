@@ -1,32 +1,40 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_right" id="1" x="162" y="-30">
+  <block type="variables_set" id="1" inline="true" x="153" y="-100">
+    <field name="VAR">Picture</field>
+    <value name="VALUE">
+      <block type="math_number" id="2">
+        <field name="NUM">1</field>
+      </block>
+    </value>
     <next>
-      <block type="movement_forward" id="2">
+      <block type="multimedia_displaybmp" id="3">
+        <field name="BMP">1</field>
         <next>
-          <block type="movement_left" id="3">
+          <block type="movement_right" id="4">
             <next>
-              <block type="controls_whileUntil" id="4" inline="false">
-                <field name="MODE">UNTIL</field>
-                <value name="NUMBER">
-                  <block type="sensor_button" id="5">
-                    <field name="OBJECT">ENTER</field>
+              <block type="movement_forward" id="5">
+                <next>
+                  <block type="movement_left" id="6">
+                    <next>
+                      <block type="controls_whileUntil" id="7" inline="false">
+                        <field name="MODE">UNTIL</field>
+                        <value name="NUMBER">
+                          <block type="sensor_button" id="8">
+                            <field name="OBJECT">ENTER</field>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="movement_stop" id="9"></block>
+                        </statement>
+                      </block>
+                    </next>
                   </block>
-                </value>
-                <statement name="DO">
-                  <block type="movement_stop" id="6"></block>
-                </statement>
+                </next>
               </block>
             </next>
           </block>
         </next>
       </block>
     </next>
-  </block>
-  <block type="movement_forward" id="7" x="-228" y="18"></block>
-  <block type="movement_rightmotor" id="8" inline="true" x="-359" y="98"></block>
-  <block type="movement_stop" id="9" x="-206" y="227"></block>
-  <block type="movement_forward" id="10" x="-260" y="291"></block>
-  <block type="math_number" id="11" x="-546" y="332">
-    <field name="NUM">0</field>
   </block>
 </xml>
