@@ -1,35 +1,20 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="1" inline="true" x="153" y="-100">
-    <field name="VAR">Picture</field>
-    <value name="VALUE">
-      <block type="math_number" id="2">
-        <field name="NUM">1</field>
-      </block>
-    </value>
+  <block type="movement_right" id="4" x="153" y="-38">
     <next>
-      <block type="multimedia_displaybmp" id="3">
-        <field name="BMP">1</field>
+      <block type="movement_forward" id="5">
         <next>
-          <block type="movement_right" id="4">
+          <block type="movement_left" id="6">
             <next>
-              <block type="movement_forward" id="5">
-                <next>
-                  <block type="movement_left" id="6">
-                    <next>
-                      <block type="controls_whileUntil" id="7" inline="false">
-                        <field name="MODE">UNTIL</field>
-                        <value name="NUMBER">
-                          <block type="sensor_button" id="8">
-                            <field name="OBJECT">ENTER</field>
-                          </block>
-                        </value>
-                        <statement name="DO">
-                          <block type="movement_stop" id="9"></block>
-                        </statement>
-                      </block>
-                    </next>
+              <block type="controls_whileUntil" id="7" inline="false">
+                <field name="MODE">UNTIL</field>
+                <value name="NUMBER">
+                  <block type="sensor_button" id="8">
+                    <field name="OBJECT">ENTER</field>
                   </block>
-                </next>
+                </value>
+                <statement name="DO">
+                  <block type="movement_stop" id="9"></block>
+                </statement>
               </block>
             </next>
           </block>
