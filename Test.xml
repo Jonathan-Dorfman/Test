@@ -1,19 +1,19 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_right" id="4" x="153" y="-38">
+  <block type="movement_right" id="1" x="153" y="-38">
     <next>
-      <block type="movement_forward" id="5">
+      <block type="movement_forward" id="2">
         <next>
-          <block type="movement_left" id="6">
+          <block type="movement_left" id="3">
             <next>
-              <block type="controls_whileUntil" id="7" inline="false">
+              <block type="controls_whileUntil" id="4" inline="false">
                 <field name="MODE">UNTIL</field>
                 <value name="NUMBER">
-                  <block type="sensor_button" id="8">
+                  <block type="sensor_button" id="5">
                     <field name="OBJECT">ENTER</field>
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="movement_stop" id="9"></block>
+                  <block type="movement_stop" id="6"></block>
                 </statement>
               </block>
             </next>
